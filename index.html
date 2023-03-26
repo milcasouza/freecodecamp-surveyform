@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1 id="title">Formulário</h1>
+        <p id="description">Formulário do Programador</p>
+    </header>
+
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Nome:</label>
+            <input id="name" type="text" placeholder="Nome" required>
+        </div>
+
+        <div class="container">
+            <label id="email-label" for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="E-mail" required>
+        </div>
+
+        <div class="container">
+            <label id="number-label" for="number">Idade:</label>
+            <input id="number" type="number" min="1" max="100" placeholder="Idade">
+        </div>
+
+        <div class="container">
+            <label id="campo">Especialidade:</label>
+            <select name="role" id="dropdown">
+                <option disabled selected value="">Selecione</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </select>
+        </div>
+
+        <fieldset class="container">
+            <label id="campo">Senioridade:</label>
+
+            <div class="label-container">
+                <label class="seniord">
+                    <input type="radio" name="option" value="junior">
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+                    <p>Júnior</p>
+                </label>
+            </div>
+
+            <div class="label-container">
+                <label class="seniord">
+                    <input type="radio" name="option" value="pleno">
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+                    <p>Pleno</p>
+                </label>
+            </div>
+
+            <div class="label-container">
+                <label class="seniord">
+                    <input type="radio" name="option" value="senior">
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+                    <p>Sênior</p>
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="container">
+            <label id="campo">Tecnologias:</label>
+
+            <div class="checkbox">
+                <label class="check-label control-checkbox">JavaScript
+                    <input type="checkbox" name="projects" value="javascript">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label class="check-label control-checkbox">Java
+                    <input type="checkbox" name="projects" value="java">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label class="check-label control-checkbox">Python
+                    <input type="checkbox" name="projects" value="python">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <label id="campo">Comentários:</label>
+            <textarea id="textarea" name="textarea" rows="3" placeholder="Escreva seu comentário aqui..."></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
